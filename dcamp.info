@@ -1,0 +1,22 @@
+name = Drupalcamp 2014
+description = Drupalcamp
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+php = 5.2
+base theme = theme_arnold
+
+features[] = logo
+features[] = favicon
+features[] = name
+features[] = slogan
+
+stylesheets[all][] = style/style.css
+
+scripts[] = scripts/goodies.js
+
+settings[theme_arnold_script_place_footer] = 1
+settings[theme_arnold_css_nuke_theme] = 1
+settings[theme_arnold_css_nuke_module_all] = 1
+settings[theme_arnold_css_nuke_system_menus] = 1
+settings[theme_arnold_css_nuke_system_theme] = 1

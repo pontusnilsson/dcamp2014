@@ -1,0 +1,48 @@
+body {
+    background: #222 url('../images/bg.gif') repeat;
+    color: #fff;
+    -moz-text-shadow: 0 -1px 0 #000;
+    -webkit-text-shadow: 0 -1px 0 #000;
+    text-shadow: 0 -1px 0 #000;
+    font-family: 'Helvetica Neue','Helvetica','Arial', sans-serif;
+    font-size: 16px;
+}
+
+@font-face{ 
+    font-family: 'LeagueGothic';
+    src: url('../font/leaguegothic-regular-webfont.eot');
+    src: url('../font/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/leaguegothic-regular-webfont.woff') format('woff'),
+        url('../font/leaguegothic-regular-webfont.ttf') format('truetype'),
+        url('../font/leaguegothic-regular-webfont.svg#webfont') format('svg');
+}
+
+.bg-gradient {
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    margin: -500px 0 0 -500px;
+    background: url('../images/bg-gradient.png') no-repeat center;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+a {
+    color: #aaa;
+}
