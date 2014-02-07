@@ -1,0 +1,82 @@
+.Speakers {
+	margin: 0;
+	padding: 0;
+
+
+}
+
+.Speakers-speaker {
+	@extend %card;
+	@include clearfix;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		@include rem(margin-bottom, 15px);
+		background: #fff;
+
+		@include at-breakpoint(500px 699px) {
+			float: left;
+			@include rem(padding-right, 15px);
+			@include rem(padding-bottom, 15px);
+			@include rem(margin, 0 15px 0 0);
+			margin-bottom: 0;
+			border-right: 1px solid #fafafa;
+		}
+
+		@include at-breakpoint($bp-smallscreen) {
+			float: left;
+			@include rem(padding-right, 15px);
+			@include rem(padding-bottom, 15px);
+			@include rem(margin, 0 15px 0 0);
+			margin-bottom: 0;
+			border-right: 1px solid #fafafa;
+		}
+
+
+	}
+
+	a:link,
+	a:visited {
+		color: $speakers;
+		border-color: $speakers;
+	}
+
+	a:hover {
+		color: $color-darkgrey;
+		border-color: $color-darkgrey;
+	}
+
+	@include at-breakpoint($bp-largepad) {
+    margin: 0;
+    @include span-columns(6, 12);
+
+    &:nth-child(2n+2) {
+      @include omega;
+    }
+  }
+}
+
+.Speakers-body {
+	clear: both;
+	border-top: 1px solid #fafafa;
+}
+
+.Speakers-company {
+	font-weight: bold;
+}
+
+.Speakers-title,
+.Speakers-company,
+.Speakers-twitter,
+.Speakers-website {
+	// @include rem(padding-left, 15px);
+}
+
+.Speakers-title {
+  font-family: $font-alternative;
+  font-weight: 500;
+  color: $speakers;
+  margin: 0;
+  padding: 0;
+}

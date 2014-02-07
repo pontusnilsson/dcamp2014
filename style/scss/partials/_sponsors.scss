@@ -1,0 +1,57 @@
+.Section--sponsors .Section-content-inner {
+	@extend %card;
+	@include clearfix;
+
+	@include at-breakpoint($bp-pad) {
+		padding: 0;
+		background: transparent;
+		box-shadow: none;
+	}
+}
+
+.Section--sponsors h3 {
+	color: $sponsors;
+}
+
+// .views-field-field-sponsor-level {
+// 	color: $sponsors;
+// }
+
+.Sponsors {
+	@include clearfix;
+	margin: 0;
+	padding: 0;
+}
+
+.Sponsors-item {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	@include rem(padding, 20px 0);
+	@include box-sizing(border-box);
+	border-bottom: 1px solid #fff;
+
+	img {
+		max-width: 100%;
+	}
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	@include at-breakpoint($bp-largepad) {
+		height: 150px;
+		float: left;
+		width: 50%;
+
+		&:nth-child(2n+2) {
+			float: right;
+			border-right: 1px solid #fff;
+		}
+
+		&:nth-last-child(2) {
+			border-bottom: none;
+		}
+	}
+}

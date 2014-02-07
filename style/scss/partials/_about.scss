@@ -1,0 +1,18 @@
+
+.Section--about  {
+	@include at-breakpoint($bp-pad) {
+		.Section-content {
+			box-shadow: none;
+		}
+	}
+	.Section-content-inner {
+		@extend %card;
+
+		@include at-breakpoint($bp-pad) {
+			background: transparent;
+			box-shadow: none;
+			margin: 0;
+			@include rem(padding, 10px 0);
+		}
+	}
+}

@@ -1,0 +1,122 @@
+// COLORS
+
+$color-cerise: 		    #ff005a;
+$color-magenta: 	    #ff00c0;
+$color-lavender: 	    #cc00ff;
+$color-blue: 			    #0072ff;
+$color-lightblue:     #00d8ff;
+$color-green: 		    #00ffc6;
+
+$color-darkgrey: 	    #272829;
+$color-beige: 		    #f8f8f8;
+$color-darkbeige:     #dbdbdb;
+
+
+// SECTIONS
+
+$about: 					$color-cerise;
+$sessions: 				$color-magenta;
+$speakers: 				$color-lavender;
+$tickets: 				$color-blue;
+$sponsors: 				$color-lightblue;
+$venue: 					$color-green;
+
+
+
+// GRID WITH SUSY
+$total-columns  : 12;
+$column-width   : 80px;
+$gutter-width   : 30px;
+$grid-padding   : 0px;
+
+
+// FONTS
+ 
+$base-font-size: 16px;
+ 
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,500);
+
+$font-standard: 'Roboto', Arial, sans-serif;
+$font-alternative: 'Alegreya Sans';
+
+$font-headings: $font-alternative;
+
+
+// BREAKPOINTS
+
+$bp-pad: 400px;
+$bp-largepad: 700px;
+$bp-smallscreen: 900px;
+$bp-largescreen: 1300px;
+
+
+// MIXINS
+
+// https://github.com/bitmanic/rem/
+$baseline-px: $base-font-size;
+@mixin rem($property, $px-values) {
+  // Convert the baseline into rems
+  $baseline-rem: $baseline-px / 1rem;
+  // Print the first line in pixel values
+  #{$property}: $px-values;
+  // If there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem; }
+  @else {
+    // Create an empty list that we can dump values into
+    $rem-values: unquote("");
+    @each $value in $px-values {
+      // If the value is zero, return 0
+      @if $value == 0 {
+        $rem-values: append($rem-values, $value); }
+      @else {
+        $rem-values: append($rem-values, $value / $baseline-rem); } }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values; }
+}
+
+// EXTENDS
+
+%card {
+	background: #fff;
+  @include rem(margin, 10px);
+  @include rem(padding, 15px);
+	box-shadow: 0 0 4px rgba(0,0,0,.2);
+  list-style: none;
+  @include box-sizing(border-box);
+
+  @include at-breakpoint($bp-largescreen) {
+    @include rem(padding, 30px);
+  }
+
+
+	.Card-title {
+    margin: 0;
+		@include rem(padding, 0 0 10px 0);
+    border-bottom: 1px solid #fafafa;
+    @include rem(font-size, 22px);
+	}
+
+	.Card-meta {
+		@include rem(padding, 10px 0);
+	}
+
+	.Card-body {
+		@include rem(padding, 10px 0);
+	}
+
+	.Card-footer {
+		@include rem(padding, 15px 0);
+    border-top: 1px solid #fafafa;
+	}
+
+}
+
+
+
+
+
+
+
+

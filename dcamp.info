@@ -11,9 +11,12 @@ features[] = favicon
 features[] = name
 features[] = slogan
 
-stylesheets[all][] = style/style.css
+stylesheets[all][] = style/css/drupalcamp.css
 
-scripts[] = scripts/goodies.js
+scripts[] = js/smooth-scroll.js
+scripts[] = js/dcamp.js
+
+plugins[panels][layouts] = layouts
 
 settings[theme_arnold_script_place_footer] = 1
 settings[theme_arnold_css_nuke_theme] = 1

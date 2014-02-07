@@ -1,0 +1,71 @@
+.Sessions-list {
+	margin: 0;
+	padding: 0;
+}
+
+.Sessions-list,
+.Session-item {
+	list-style: none;
+}
+
+.Session-item {
+	@extend %card;
+	@include clearfix;
+	@include box-sizing(border-box);
+
+	a:link,
+	a:visited {
+		color: $sessions;
+		border-color: $sessions;
+	}
+
+	a:hover {
+		color: $color-darkgrey;
+		border-color: $color-darkgrey;
+	}  
+
+	@include at-breakpoint($bp-largepad) {
+    margin: 0;
+    @include span-columns(6, 12);
+
+    &:nth-child(2n+2) {
+      @include omega;
+    }
+  }
+
+	// @include at-breakpoint($bp-largescreen) {
+	// 	margin: 0;
+	// 	@include span-columns(4, 12);
+
+	// 	&:nth-child(2n+2) {
+	// 		@include span-columns(4, 12);
+	// 	}
+
+	// 	&:nth-child(3n+3) {
+	// 		@include omega;
+	// 	}
+	// }
+}
+
+.Session-title {
+	font-family: $font-alternative;
+	font-weight: 500;
+	color: $sessions;
+}
+
+.Session-footer img {
+	float: left;
+	@include rem(margin-right, 10px);
+	display: block;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.Session-speaker {
+	margin: 0;
+	@include rem(font-size, 20px);
+}
+
+.Session-speaker-twitter,
+.Session-speaker-website {
+	@include rem(font-size, 14px);
+}

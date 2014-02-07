@@ -77,5 +77,6 @@
   <?php print $page; ?>
   <?php if(theme_get_setting('theme_arnold_script_place_footer')) { print $scripts; } ?>
   <?php print $page_bottom; ?>
+
 </body>
 </html>
