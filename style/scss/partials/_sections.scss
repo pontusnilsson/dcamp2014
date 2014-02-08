@@ -96,12 +96,21 @@
 
 @include at-breakpoint($bp-pad) {
 
+	.Section--about {
+		background: $about;
+	}
+
+	// .Section--sponsors {
+	// 	background: $sponsors;
+	// }
+
 	.Section--sessions {
 		background: $sessions;
 	}
 
 	.Section-title--sessions,
-	.Section-title--venue {
+	.Section-title--venue,
+	.Section-title--drupalcamp  {
 		color: #fff;
 	}
 
