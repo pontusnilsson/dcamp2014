@@ -5,7 +5,7 @@
 
     if ( $(window).width() < 400 ) {
       // mobile-ish
-      $('.Session-item').css({height: 'auto'});
+      $('.Session-item, .Speakers-speaker').css({height: 'auto'});
       allPanels.hide();
 
       $('.Section .Section-title').click(function(e) {
@@ -31,7 +31,7 @@
        $el,
        topPosition = 0;
 
-      $('.Session-item').each(function() {
+      $('.Session-item, .Speakers-speaker').each(function() {
 
         $el = $(this);
         topPostion = $el.position().top;

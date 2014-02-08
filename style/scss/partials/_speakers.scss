@@ -50,6 +50,7 @@
 	@include at-breakpoint($bp-largepad) {
     margin: 0;
     @include span-columns(6, 12);
+    @include rem(margin-bottom, 30px);
 
     &:nth-child(2n+2) {
       @include omega;
