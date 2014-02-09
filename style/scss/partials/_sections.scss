@@ -98,6 +98,12 @@
 
 	.Section--about {
 		background: $about;
+		color: #fff;
+
+		a {
+			color: #000;
+			border-bottom: 1px dotted #000;
+		}
 	}
 
 	// .Section--sponsors {
