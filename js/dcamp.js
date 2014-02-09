@@ -11,12 +11,12 @@
 
       $('.Section .Section-title').click(function(e) {
         e.preventDefault();
-        var $sectionContent = $(this).parent().find('.Section-content');
+        // var $sectionContent = $(this).parent().find('.Section-content');
 
-        if ($sectionContent.is(':visible')) {
+        if ($(this).parent().find('.Section-content').is(':visible')) {
           allPanels.hide();
         } else {
-          $sectionContent.show();
+          $(this).parent().find('.Section-content').show();
         }
 
       });
