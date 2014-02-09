@@ -6,12 +6,12 @@
     if ( $(window).width() < 400 ) {
       // mobile-ish
       $('.Session-item, .Speakers-speaker').css({height: 'auto'});
-      allPanels.hide();
 
+      allPanels.hide();
       $('.Section .Section-title').click(function(e) {
         e.preventDefault();
-        var chosenItem = $(this).parent().find('.Section-content');
-        chosenItem.slideToggle(100);
+        allPanels.hide();
+        $(this).parent().find('.Section-content').slideDown(100);
       });
 
 
