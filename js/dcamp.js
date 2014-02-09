@@ -8,11 +8,16 @@
       $('.Session-item, .Speakers-speaker').css({height: 'auto'});
 
       allPanels.hide();
+      
       $('.Section .Section-title').click(function(e) {
         e.preventDefault();
-        allPanels.hide();
+        // allPanels.hide();
         var $sectionContent = $(this).parent().find('.Section-content');
-        $sectionContent.slideDown(100);
+        if ($sectionContent.is(':visible')) {
+          $sectionContent.hide();
+        } else {
+          $sectionContent.show();
+        }
       });
 
 
