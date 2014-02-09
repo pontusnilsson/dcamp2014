@@ -2,6 +2,10 @@
 	@include at-breakpoint($bp-smallscreen) {
 		@include clearfix;
 		@include rem(padding, 40px 0);
+
+		&:last-child {
+			min-height: 1000px;
+		}
 	}
 
 	@include at-breakpoint($bp-largescreen) {

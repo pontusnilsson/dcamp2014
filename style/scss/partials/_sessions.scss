@@ -1,10 +1,16 @@
 .Section--sessions h3 {
-	@include rem(margin, 30px 0 20px 0);
-	@include rem(padding-bottom, 10px);
-	color: #fff;
-	clear: both;
-	font-weight: 100;
-	border-bottom: 1px solid rgba(255,255,255,.5);
+
+	color: $sessions;
+	border-bottom: 1px solid lighten($sessions, 30%);
+
+	@include at-breakpoint($bp-pad) {
+		@include rem(margin, 30px 0 20px 0);
+		@include rem(padding-bottom, 10px);
+		color: #fff;
+		clear: both;
+		font-weight: 100;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+	}
 }
 
 .Sessions-list {
