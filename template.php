@@ -46,3 +46,8 @@ function dcamp_js_alter(&$js) {
   $js['misc/jquery.js']['version'] = "1.9.1";
   $js['misc/jquery.js']['data'] = 'sites/all/themes/dcamp/js/jquery-1.9.1.min.js';
 }
+
+// Remove Query Strings from CSS filenames (CacheBuster)
+function dcamp_process_html(&$variables) {
+  $variables['styles'] = preg_replace('/\.css\?.*"/','.css"', $variables['styles']);
+}
