@@ -11,7 +11,8 @@
       $('.Section .Section-title').click(function(e) {
         e.preventDefault();
         allPanels.hide();
-        $(this).parent().find('.Section-content').slideDown(100);
+        var $sectionContent = $(this).parent().find('.Section-content');
+        $sectionContent.slideDown(100);
       });
 
 
