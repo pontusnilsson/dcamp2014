@@ -1,6 +1,6 @@
 .Section--sessions h3 {
 
-	@include rem(margin; 20px 10px);
+	@include rem(margin, 20px 10px);
 	color: $sessions;
 	border-bottom: 1px solid darken(#f8f8f8, 10%);
 
