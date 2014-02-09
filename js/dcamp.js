@@ -11,14 +11,8 @@
 
       $('.Section .Section-title').click(function(e) {
         e.preventDefault();
-        // var $sectionContent = $(this).parent().find('.Section-content');
-
-        if ($(this).parent().find('.Section-content').is(':visible')) {
-          allPanels.hide();
-        } else {
-          $(this).parent().find('.Section-content').show();
-        }
-
+        allPanels.hide();
+        $(this).parent().find('.Section-content').show();
       });
 
 
