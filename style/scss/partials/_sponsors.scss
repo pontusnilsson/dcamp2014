@@ -1,3 +1,7 @@
+.Section--sponsors h3 {
+	@include subheading($sponsors);
+}
+
 .Section--sponsors .Section-content-inner {
 	@extend %card;
 	@include clearfix;

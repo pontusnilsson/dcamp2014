@@ -53,6 +53,25 @@ $bp-largescreen: 1300px;
 
 // MIXINS
 
+// subheading mixing
+
+@mixin subheading($textcolor) {
+
+  @include rem(margin, 20px 10px);
+  color: $textcolor;
+  border-bottom: 1px solid darken(#f8f8f8, 10%);
+  font-weight: 100;
+
+  @include at-breakpoint($bp-pad) {
+    @include rem(margin, 30px 0 20px 0);
+    @include rem(padding-bottom, 10px);
+    color: #fff;
+    clear: both;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+  }
+}
+ 
+
 // https://github.com/bitmanic/rem/
 $baseline-px: $base-font-size;
 @mixin rem($property, $px-values) {

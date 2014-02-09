@@ -1,3 +1,7 @@
+.Section--about h3 {
+	@include subheading($about);
+}
+
 
 .Section--about  {
 	@include at-breakpoint($bp-pad) {
