@@ -1,9 +1,10 @@
-Section--sessions h3 {
+.Section--sessions h3 {
+	@include rem(margin, 30px 0 20px 0);
+	@include rem(padding-bottom, 10px);
 	color: #fff;
 	clear: both;
-	display: block;
 	font-weight: 100;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(255,255,255,.5);
 }
 
 .Sessions-list {
