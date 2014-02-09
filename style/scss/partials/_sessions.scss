@@ -1,7 +1,8 @@
 .Section--sessions h3 {
 
+	@include rem(margin; 20px 10px);
 	color: $sessions;
-	border-bottom: 1px solid lighten($sessions, 30%);
+	border-bottom: 1px solid darken(#f8f8f8, 10%);
 
 	@include at-breakpoint($bp-pad) {
 		@include rem(margin, 30px 0 20px 0);
