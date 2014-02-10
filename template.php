@@ -49,5 +49,5 @@ function dcamp_js_alter(&$js) {
 
 // Remove Query Strings from CSS filenames (CacheBuster)
 function dcamp_process_html(&$variables) {
-  $variables['styles'] = preg_replace('/\.css\?.*"/','.css"', $variables['styles']);
+ //  $variables['styles'] = preg_replace('/\.css\?.*"/','.css"', $variables['styles']);
 }
