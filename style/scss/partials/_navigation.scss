@@ -28,7 +28,7 @@
 	}
 
 	@include at-breakpoint($bp-largescreen) {
-		@include rem(font-size, 45px);
+		@include rem(font-size, 40px);
 	}
 
 }
@@ -124,6 +124,14 @@
 
 	&:hover {
 		color: lighten($venue, 40%);
+	}
+}
+
+.Navigation-item--awards a {
+	color: $awards;
+
+	&:hover {
+		color: lighten($awards, 40%);
 	}
 }
 
