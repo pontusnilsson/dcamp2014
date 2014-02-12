@@ -19,4 +19,12 @@
 			@include rem(padding, 10px 0);
 		}
 	}
+
+	.Sponsors {
+		a:link,
+		a:visited,
+		&:hover {
+			border-bottom: none;
+		}
+	}
 }
