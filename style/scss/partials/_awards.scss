@@ -1,0 +1,16 @@
+.Section-title--drupal {
+	color: $awards;
+}
+
+.Section--awards a {
+	&:link,
+	&:visited {
+		color: $awards;
+		border-color: $awards;
+	}
+
+	&:hover {
+		color: $color-darkgrey;
+		border-color: $color-darkgrey;
+	}
+}
