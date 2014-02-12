@@ -97,6 +97,10 @@
 	color: $venue;
 }
 
+.Section-title--awards {
+	color: $awards;
+}
+
 
 @include at-breakpoint($bp-pad) {
 
