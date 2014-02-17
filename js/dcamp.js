@@ -1,6 +1,6 @@
 (function($) {
 
-  $(window).on("load resize",function(e){
+  $(window).on("load",function(e){
     var allPanels = $('.Section .Section-content');
 
     if ( $(window).width() < 400 ) {
