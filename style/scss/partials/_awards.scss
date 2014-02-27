@@ -14,3 +14,7 @@
 		border-color: $color-darkgrey;
 	}
 }
+
+.Section--awards .Section-content-inner {
+	@extend %card;
+}
