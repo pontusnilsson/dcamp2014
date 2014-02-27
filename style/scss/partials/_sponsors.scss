@@ -4,7 +4,6 @@
 
 .Section--sponsors .Section-content-inner {
 	@extend %card;
-	@include clearfix;
 
 	@include at-breakpoint($bp-pad) {
 		padding: 0;

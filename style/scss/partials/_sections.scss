@@ -58,6 +58,7 @@
 		box-shadow: none;
 		padding-bottom: 60px;
 		background-color: transparent;
+		@include rem(padding, 10px);
 	}
 
 	*:last-child {
@@ -114,9 +115,6 @@
 		}
 	}
 
-	// .Section--sponsors {
-	// 	background: $sponsors;
-	// }
 
 	.Section--sessions {
 		background: $sessions;
