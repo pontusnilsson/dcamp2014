@@ -2,6 +2,10 @@
 	@extend %card;
 	width: 100%;
 	font-size: 0.8em;
+
+	td {
+		border: 1px solid #eee;
+	}
 }
 
 .Schedule-heading {
