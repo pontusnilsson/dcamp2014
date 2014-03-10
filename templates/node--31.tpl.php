@@ -79,8 +79,6 @@
  *
  * @ingroup themeable
  */
-
-dpm($content);
 ?>
   <?php print $user_picture; ?>
 
