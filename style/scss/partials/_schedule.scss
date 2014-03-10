@@ -5,12 +5,19 @@
 
 	td {
 		border: 1px solid #eee;
+		padding: 5px;
+
+		@include at-breakpoint($bp-smallscreen) {
+			padding: 5px 10px;
+		}
 	}
 }
 
 .Schedule-heading {
 	font-family: $font-headings;
 	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2em;
 }
 
 .Schedule-track {
@@ -20,9 +27,4 @@
 .Schedule-time {
 	width: 20%;
 	font-weight: bold;
-}
-
-.Schedule-track,
-.Schedule-time {
-	padding: 5px;
 }
