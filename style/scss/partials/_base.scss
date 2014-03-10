@@ -64,3 +64,15 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 }
+
+
+.info-container {
+	@include at-breakpoint($bp-pad) {
+		@include span-columns(6, 12);
+		@include rem(margin-bottom, 20px);
+
+		&:nth-child(2n+2) {
+			@include omega;
+		}
+	}
+}
