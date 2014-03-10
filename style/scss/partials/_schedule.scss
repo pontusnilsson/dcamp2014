@@ -1,0 +1,18 @@
+.Schedule {
+	@extend %card;
+	width: 100%;
+}
+
+.Schedule-heading {
+	font-family: $font-headings;
+	text-transform: uppercase;
+}
+
+.Schedule-track {
+	width: 80%
+}
+
+.Schedule-time {
+	width: 20%;
+}
+
