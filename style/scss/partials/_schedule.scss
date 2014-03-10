@@ -1,6 +1,7 @@
 .Schedule {
 	@extend %card;
 	width: 100%;
+	font-size: 0.8em;
 }
 
 .Schedule-heading {
@@ -9,10 +10,14 @@
 }
 
 .Schedule-track {
-	width: 80%
+	width: 40%;
 }
 
 .Schedule-time {
 	width: 20%;
 }
 
+.Schedule-track,
+.Schedule-time {
+	padding: 5px;
+}
