@@ -18,3 +18,36 @@
 .Section--awards .Section-content-inner {
 	@extend %card;
 }
+
+.Awards {
+	margin: 0;
+	padding: 0;
+	@include container;
+
+	@include at-breakpoint($bp-largepad) {
+		@include rem(padding, 0 10px);
+	}
+}
+
+.Awards {
+	
+	a:link,
+	a:visited {
+		border-bottom: none;
+	}
+
+}
+
+.Awards-item {
+	@extend %card;
+
+	@include at-breakpoint($bp-largepad) {
+    margin: 0;
+    @include span-columns(6, 12);
+    @include rem(margin-bottom, 30px);
+
+    &:nth-child(2n+2) {
+      @include omega;
+    }
+  }
+}

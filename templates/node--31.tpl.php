@@ -80,7 +80,7 @@
  * @ingroup themeable
  */
 
-$hi = $content;
+dpm($content);
 ?>
   <?php print $user_picture; ?>
 
@@ -96,8 +96,10 @@ $hi = $content;
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_view']);
       print render($content);
     ?>
     </div>
+    <?php print render($content['field_view']); ?>
   </div>
 

@@ -5,7 +5,7 @@
 
     if ( $(window).width() < 400 ) {
       // mobile-ish
-      $('.Session-item, .Speakers-speaker').css({height: 'auto'});
+      $('.Session-item, .Speakers-speaker, .Awards-item').css({height: 'auto'});
 
       allPanels.hide();
 
@@ -32,7 +32,7 @@
        $el,
        topPosition = 0;
 
-      $('.Session-item, .Speakers-speaker').each(function() {
+      $('.Session-item, .Speakers-speaker, .Awards-item').each(function() {
 
         $el = $(this);
         topPostion = $el.position().top;
